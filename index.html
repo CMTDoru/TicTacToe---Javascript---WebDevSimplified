@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module"src="script.js" defer></script>
+    <title>TicTacToe</title>
+</head>
+<body>
+     <!-- Board for the game -->
+     <!-- we use class and id to separate our css from javascript -->
+    <div class="board" id="board">
+        <!-- Here we will have all our tictactoe elements -->
+        <!-- Here at some point we will have to refactor in to inject javascript elements -->
+        <!-- Here we will use a class of X/O -->
+        <div class="cell" data-cell></div>
+        <!-- We will not use the x/o to fill the space, so we dont have to think about font, fond size, position, etc
+        Instead we will draw the X and O in CSS -->
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <!-- Here we will have the win page -->
+    <div class="winning-message" id="winningMessage">
+        <!-- We need a text space -->
+        <div data-winning-message-text>X Wins!</div>
+        <!-- And a reset game button -->
+        <button id="restartButton">Restart</button>
+    </div>
+</body>
+</html>
